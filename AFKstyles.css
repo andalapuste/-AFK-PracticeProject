@@ -1,3 +1,16 @@
+body {
+    background-image: #000000 url("https://wallpapercave.com/wp/zuiHX0K.jpg, https://wallpapercave.com/wp/zuiHX0K.jpg") repeat right top;
+
+}
+
+div.headerSection{
+    
+    background-color: black;
+    color: white;
+    margin: 20px 0 20px 0;
+    padding: 20px;   
+    
+}
 h1{
 	
 
