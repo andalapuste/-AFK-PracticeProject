@@ -5,7 +5,7 @@
     <title> HOMEPAGE</title>
     <link rel="stylesheet" type="text/css" href="AFKstyles.css">
     
-    <img src = "https://in-tendhost.co.uk/kcl/banner.jpg" alt="KingsBanner" align="middle" width=auto;/>  
+    <img src = "https://in-tendhost.co.uk/kcl/banner.jpg" alt="KingsBanner" align="middle" width=100%;/>  
     
     <div class = "headerSection">
           
@@ -32,29 +32,32 @@
               <option value="3)CompSciModules.html">Computer Science</option>
               <option value="4)ManagementModules.html">Computer Science with Management</option>
           </select>&nbsp;<input type="button" value="Choose Modules!" onClick="gothere()"> <br>
-          <input type="checkbox" name="windowoption" value="ON">Open in alternate window</p>
+         <!-- <input type="checkbox" name="windowoption" value="ON">Open in alternate window</p> -->
       </form>
 
+      
 <script language="javascript">
-
+<!--
 
 /*Combo box with "open in new window" credit
 -By JavaScript Kit (www.javascriptkit.com)
 Over 200+ free scripts here!
 */
 
-        function gothere(){
-        var thebox=document.mycombowopt
-        if (thebox.windowoption.checked){
-        
-            if (!window.newwindow)
-            newwindow=window.open("")
-            newwindow.location= thebox.example.options[thebox.example.selectedIndex].value
-        }else
-            location=thebox.example.options[thebox.example.selectedIndex].value
-        }
-  
-        </script>
+function gothere(){
+var thebox=document.mycombowopt
+if (thebox.windowoption.checked){
+if (!window.newwindow)
+newwindow=window.open("")
+newwindow.location=
+thebox.example.options[thebox.example.selectedIndex].value
+}
+else
+location=
+thebox.example.options[thebox.example.selectedIndex].value
+}
+//-->
+</script>
 
       
       
