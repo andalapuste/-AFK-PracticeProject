@@ -1,69 +1,66 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <styles>
-
-    </styles>
+    
     <title> HOMEPAGE</title>
     <link rel="stylesheet" type="text/css" href="AFKstyles.css">
     
-      <div class = "headerSection">
+    <img src = "https://in-tendhost.co.uk/kcl/banner.jpg" alt="KingsBanner" align="middle" width=auto;/>  
+    
+    <div class = "headerSection">
           
-      <img src = "https://in-tendhost.co.uk/kcl/banner.jpg" alt="KingsBanner" align="middle" width=auto;/>   
+          <div class="topnav" id="myTopnav">
+            <a href="1)Homepage.html">Homepage</a>
+            <a href="2)About.html">About King's College </a>
+           <!-- <a href="3)CompSciModules.html"> Computer Science Module Selection</a>
+            <a href="4)ManagementModules.html"> Management Module Selection</a>
+            <a href="5)TheTable.html"> The Table Re-Direct</a> -->
+            <a href="6)Help.html">How To Use Website </a>
+          </div>-->
           
-        <header> 
-            
-            <div class ="navigation"> 
-
-				            <nav>
-								<ul>
-									<li><a href="1)Homepage.html">Homepage </a></li>
-									<li><a href="2)About.html">About King's College Informatics </a></li>
-									<li><a href="3)CompSciModules.html"> Computer Science Module Selection</a></li>
-                                    <li><a href="4)ManagementModules.html"> Management Module Selection</a></li>
-                                     <li><a href="5)TheTable.html"> The Table Re-Direct</a></li>
-								</ul>
-							</nav>
-            </div>
-             
-        </header>
-          
-      <h1> WELCOME TO KINGS</h1>
-      <h3> Informatics Department - Make learning live!</h3>
+      <img src = "https://alumni.kcl.ac.uk/image/2015-site/KCL_boxed_redcmyk_A4-002-3.gif" alt="KingsBanner" align="middle" width=100%;/>  
      
-               
-          </section> 
       </div>
     
 </head>
 
   <body>
       
+      <h2> Chose your Stream </h2>
+      <form name="mycombowopt">
+          <select name="example" size=1>
+              <option value="3)CompSciModules.html">Computer Science</option>
+              <option value="4)ManagementModules.html">Computer Science with Management</option>
+          </select>&nbsp;<input type="button" value="Choose Modules!" onClick="gothere()"> <br>
+          <input type="checkbox" name="windowoption" value="ON">Open in alternate window</p>
+      </form>
+
+<script language="javascript">
+
+
+/*Combo box with "open in new window" credit
+-By JavaScript Kit (www.javascriptkit.com)
+Over 200+ free scripts here!
+*/
+
+        function gothere(){
+        var thebox=document.mycombowopt
+        if (thebox.windowoption.checked){
+        
+            if (!window.newwindow)
+            newwindow=window.open("")
+            newwindow.location= thebox.example.options[thebox.example.selectedIndex].value
+        }else
+            location=thebox.example.options[thebox.example.selectedIndex].value
+        }
+  
+        </script>
+
+      
+      
+      
     
   </body>
-
-		<div id = "leftCompSciImage">
-			
-        <a href="3)CompSciModules.html">
-              <img src = "http://blogs.kcl.ac.uk/nms-informatics/files/2015/03/906350_10153131149884920_3013986144693447109_o1.jpg" alt="DummyImageFrountPage" align="middle" width=100%;/>
-            </a>
-            
-             <!img src = "https://imgfave.azureedge.net/image_cache/1243826056354563.jpeg" alt="LeftComputerScienceImage" align="middle" width=auto;/> 
-				
-		</div>			
-				
-		<div id = "rightCSManagementImage">
-			
-			
-             <!img src = "http://www.clarku.edu/sites/default/files/major-economics-program-header-clark-university.jpg" alt="RightCSManagementImage" align="middle" width=auto;/> 
-            
-            
-			
-		</div>	
-				
-		
-
-	</div>
 
 <footer>
     <p> Informatics Computer Science 2017</p>
