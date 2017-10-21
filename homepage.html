@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    
+    <title> HOMEPAGE</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
+    <img src = "https://in-tendhost.co.uk/kcl/banner.jpg" alt="KingsBanner" align="middle" width=100%;/>  
+    
+    <div class = "headerSection">
+          
+          <div class="topnav" id="myTopnav">
+            <a href="homepage.html">Homepage</a>
+            <a href="index.html"> Computer Science Module Selection </a>
+            <a href="index2.html"> Management Module Selection </a>
+            <a href="table.html"> Table</a> 
+          </div>
+          
+      <img src = "https://alumni.kcl.ac.uk/image/2015-site/KCL_boxed_redcmyk_A4-002-3.gif" alt="KingsBanner" align="middle" width=100%;/>  
+     
+    </div>
+    
+</head>
+
+  <body>
+      
+      <h2> Chose your Stream </h2>
+      <form name="mycombowopt">
+          <select name="example" size=1>
+              <option value="index.html">Computer Science</option>
+              <option value="index2.html">Computer Science with Management</option>
+          </select>&nbsp;<input type="button" value="Choose Modules!" onClick="gothere()"> <br>
+         <input type="checkbox" name="windowoption" value="ON">Open in alternate window</p>
+      </form>
+
+      
+<script language="javascript">
+
+    function gothere(){
+        var thebox = document.mycombowopt
+        if (thebox.windowoption.checked){
+            
+            if (!window.newwindow)
+                newwindow = window.open("")
+                newwindow.location = thebox.example.options[thebox.example.selectedIndex].value
+            }
+            else{
+                
+                location = thebox.example.options[thebox.example.selectedIndex].value             
+            } 
+    }
+</script>
+
+  </body>
+
+<footer>
+    <p> Informatics Computer Science 2017</p>
+</footer>
+
+</html>
